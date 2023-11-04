@@ -60,6 +60,9 @@ def __getReddit():
 
 
 def __getContentFromPost(submission) -> VideoScript:
+    print(submission.url)
+    print(submission.title)
+    print(submission.id)
     content = VideoScript(submission.url, submission.title, submission.id)
     print(f"Creating video for post: {submission.title}")
     print(f"Url: {submission.url}")

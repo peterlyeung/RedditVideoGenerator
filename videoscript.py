@@ -45,6 +45,7 @@ class VideoScript:
 
     def __createVoiceOver(self, name, text):
         file_path = voiceover.create_voice_over(f"{self.fileName}-{name}", text)
+        print(file_path)
         audioClip = AudioFileClip(file_path)
         if (self.totalDuration + audioClip.duration > MAX_DURATION):
             return None
