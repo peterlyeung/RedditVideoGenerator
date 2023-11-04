@@ -38,6 +38,7 @@ def __takeScreenshot(filePrefix, driver, wait, handle="Post"):
     return fileName
 def __setupDriver(url: str):
     # Specify the location of the user data directory for the existing Chrome session.
+    #
     user_data_dir = 'C:\\Users\\Peter\\AppData\\Local\\Google\\Chrome\\User Data'
 
     # Configure ChromeOptions to use the existing user data directory.
